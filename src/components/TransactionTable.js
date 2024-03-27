@@ -11,7 +11,7 @@ export default function TransactionTable({ txns }) {
 
   const [tableAccount, setTableAccount] = useState(false);
 
-    const urlBackend = `https://9166-2806-2f0-a1a0-ed49-e84b-3e8-2d6f-9aca.ngrok-free.app`;
+    const urlBackend = `https://nest-finance.onrender.com`;
 
     const fnaccount = async () => {
         const response = await axios.get(`${urlBackend}/transactions/account`);
