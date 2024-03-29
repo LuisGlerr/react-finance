@@ -11,7 +11,7 @@ export default function TransactionTable({ txns }) {
 
   const [tableAccount, setTableAccount] = useState(false);
 
-    const urlBackend = `https://nest-finance.onrender.com`;
+    const urlBackend = `http://149.50.136.80:3001`;
 
     const fnaccount = async () => {
         const response = await axios.get(`${urlBackend}/transactions/account`);
